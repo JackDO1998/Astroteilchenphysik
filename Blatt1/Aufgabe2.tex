@@ -1,0 +1,58 @@
+\section{Sonnenstrahlung}
+\subsection{Teil a)}
+Das Stefan-Boltzmann-Gesetz lautet:
+\begin{center}
+    $P=\sigma A T^4_{Sonne}$\\
+\end{center}
+mit:
+\begin{center}
+    $\sigma \approx 5.670 \times 10^{-8}\si[]{\frac{W}{m^2*K^4}}$\\
+    $A=4\pi R^2_{Sonne}$\\
+    $R_{Sonne}=6.96\times 10^8\si[]{m}$\\
+    $T_{Sonne}=5780\si[]{K}$\\
+    $\Rightarrow$ $P=5.670 \times 10^{-8}\si[]{\frac{W}{m^2*K^4}} *4\pi*(6.96\times 10^{8}\si[]{m})^2 *5780^4\si[]{K}=3.59\times 10^{26}\si[]{W}$
+
+\end{center}
+Das ist die komplette Strahlungsleistung der Sonne, im Abstand von einer Astronomischen Einheit (AE bzw. AU) 
+verteilt sich diese Leistung auf die Oberfläche einer Kugel mit Radius $R=1\si[]{AE}\approx 150\times 10^9\si[]{m}$.
+Es folgt also:
+\begin{center}
+    $\Phi=\frac{P}{A}$\\
+    $A=4\pi R^2=4\pi*(150\times 10^{9}\si[]{m})^2=2.83\times 10^{23}\si[]{m^2}$\\
+    $\Rightarrow$ $\Phi=1.272\si[]{\frac{kW}{m^2}}$
+\end{center}
+\subsection{Teil b)}
+Die Strahlungsleistung welche die Erde trifft ergibt sich über:
+\begin{center}
+    $P_{Erde}=\Phi A_{Erde}$\\
+    $A_{Erde}=\pi R^2_{Erde}$\\
+    $\Rightarrow$ $P_{Erde}=\Phi \pi R^2_{Erde}$
+\end{center}
+Da allerdings 30\% der Strahlung sofort reflektiert werden muss noch ein Reflektionsfaktor hinzugefügt werden:
+\begin{center}
+    $P_{Erde}=\Phi \pi R^2_{Erde}(1-Albedo)$\\
+    $\Rightarrow$ $P_{Erde}=1.272\si[]{\frac{kW}{m^2}}\pi *(6.36\times 10^6\si[]{m})^2*(1-0.3)=1.131\times 10^{17}\si[]{W}$
+\end{center}
+
+\subsection{Teil c)}
+Die von der Erde absorbirte Strahlung lässt sich schreiben als:
+\begin{center}
+    $P_{abs}=(1-Albedo)\Phi A_{Erde1/2}=(1-Albedo)\frac{R^2_{Sonne}T^4_{Sonne}\sigma}{(1au)^2}\pi R^2_{Erde}$
+\end{center}
+Die von der Erde auf ihrer ganzen Fläche emmitierte Strahlung wird mit Stefan-Boltzmann geschrieben als:
+\begin{center}
+    $P_{Erde}=\sigma AT^4_{Erde}=4\sigma\pi R^2_{Erde}T^4_{Erde}$
+\end{center}
+Es muss nun gelten:
+\begin{center}
+    $P_{abs}=P_{Erde}$\\
+    $\Rightarrow$ $(1-Albedo)\frac{R^2_{Sonne}T^4_{Sonne}\sigma}{(1au)^2}\pi R^2_{Erde}=4\sigma\pi R^2_{Erde}T^4_{Erde}$\\
+    $\Leftrightarrow$ $(1-Albedo)\frac{R^2_{Sonne}T^4_{Sonne}}{(1au)^2}=4*T^4_{Erde}$\\
+    $\Leftrightarrow$ $T^4_{Erde}=T^4_{Sonne}\frac{1-Albedo}{4}(\frac{R_{Sonne}}{1au})^2$\\
+    $\Leftrightarrow$ $T_{Erde}=T_{Sonne} \sqrt[4]{\frac{1-Albedo}{4}(\frac{R_{Sonne}}{1au})^2}$\\
+    $\Rightarrow$ $T_{Erde}=5780\si[]{K}*\sqrt[4]{\frac{1-0.3}{4}*(\frac{6.96\times 10^8\si[]{m}}{150 \times 10^9\si[]{m}})^2}=254.652\si[]{K}\approx 255\si[]{K}$
+\end{center}
+
+\subsection{Teil d)}
+Es gibt zusätzlich das Problem das die Erde eine Atmosphäre hat und die Sonne nicht wie ein schwarzer Strahler nur im Infraroten Spektrum strahlt sondern auch noch mit einer
+vielzahl anderen Wellenlängen von denen nicht alle durch die Atmosphäre abgeschirmt werden.
